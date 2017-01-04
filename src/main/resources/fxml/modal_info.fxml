@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="220.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.debtapp.javafx.controllers.ModalInfoController">
+   <children>
+      <Label fx:id="lblInfo" text="Label">
+         <VBox.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+      </Label>
+      <Button fx:id="btnOkey" cancelButton="true" defaultButton="true" mnemonicParsing="false" onAction="#setClose" prefHeight="25.0" prefWidth="72.0" text="OK" />
+   </children>
+</VBox>
