@@ -49,6 +49,7 @@ public class ModalController implements Initializable{
                         interDebt.setAddress(fieldAddress.getText());
                         interDebt.setVkId(fieldId.getText());
                         interDebt.setIp(fieldIp.getText());
+                        Controller.updateDebtorBook(interDebt);
                         stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                         stage.close();
                     }else {

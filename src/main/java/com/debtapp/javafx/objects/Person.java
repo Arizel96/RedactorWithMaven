@@ -6,6 +6,7 @@ import javafx.beans.property.SimpleStringProperty;
  * Created by Arizel on 25.12.2016.
  */
 public abstract class Person extends SimpleStringProperty {
+    protected int id;
     protected SimpleStringProperty name;
     protected SimpleStringProperty  phone;
     protected SimpleStringProperty address;
@@ -18,6 +19,14 @@ public abstract class Person extends SimpleStringProperty {
         this.address = new SimpleStringProperty(address);
         this.vkId = new SimpleStringProperty(vkId);
         this.ip = new SimpleStringProperty(ip);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setName(String name) {

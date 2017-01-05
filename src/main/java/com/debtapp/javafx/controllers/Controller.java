@@ -88,7 +88,7 @@ public class Controller implements Initializable{
                     text = "Должники успешно удалены!";
                 }
                 for (Debtor d : selectedDebtors) {
-                    debtorBook.getDebtors().remove(d);
+                    debtorBook.delete(d);
                 }
                 modalCreator.createInfoModal(actionEvent,INFO_PATH, text);
                 break;
@@ -111,6 +111,10 @@ public class Controller implements Initializable{
 
     public static void removeFromDebtorBook(Debtor debtor) {
         debtorBook.delete(debtor);
+    }
+
+    public static void updateDebtorBook(Debtor debtor) {
+        debtorBook.update(debtor);
     }
 
     private void lookFor() {
